@@ -6,7 +6,7 @@ import time
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 clientSocket.connect(('', 12000))
 clientSocket.settimeout(1)
-for x in range(1, 10):
+for x in range(1, 11):
     message = 'Ping '+str(x)+' '+date.today().isoformat()+' T '
     message += datetime.now().time().isoformat()+' UTC'
     print 'Sending to Server: \'{0}\''.format(message)
